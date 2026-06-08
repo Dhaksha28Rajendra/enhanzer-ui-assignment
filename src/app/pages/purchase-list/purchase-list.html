@@ -1,0 +1,98 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="logo">eZ</div>
+
+    <div class="nav-item">🏠</div>
+    <div class="nav-item">💰</div>
+    <div class="nav-item">📦</div>
+    <div class="nav-item active">🛒</div>
+    <div class="nav-item">📊</div>
+    <div class="nav-item">⚙️</div>
+  </aside>
+
+  <main class="main-content">
+    <div class="header">
+      <div class="breadcrumb">Finance &gt; Purchase Bills</div>
+      <div class="org">My Organization</div>
+    </div>
+
+    <div class="title-row">
+      <div class="page-title">Purchase Bills</div>
+      <input type="text" placeholder="Search..." />
+    </div>
+
+    <div class="status-bar">
+      <span class="active">All 27</span>
+      <span>Draft 8</span>
+      <span>Pending 6</span>
+      <span>Completed 2</span>
+      <span>Rejected 11</span>
+      <span>Cancelled 1</span>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Description</th>
+            <th>Supplier</th>
+            <th>Ref No</th>
+            <th>Total Cost</th>
+            <th>Total Sales</th>
+            <th>Qty</th>
+            <th>Branch</th>
+            <th>Due Date</th>
+            <th>Created</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr (click)="openDetails()">
+            <td>1</td>
+            <td>2024-01-15</td>
+            <td><span class="badge approved">Approved</span></td>
+            <td>Initial Payment</td>
+            <td>ABC Company</td>
+            <td>REF001</td>
+            <td>5,000.00</td>
+            <td>6,500.00</td>
+            <td>10</td>
+            <td>Main Branch</td>
+            <td>2024-01-20</td>
+            <td>01-01-2024 1:45PM</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2024-01-16</td>
+            <td><span class="badge pending">Pending</span></td>
+            <td>Second Payment</td>
+            <td>XYZ Company</td>
+            <td>REF002</td>
+            <td>8,000.00</td>
+            <td>9,250.00</td>
+            <td>8</td>
+            <td>Branch B</td>
+            <td>2024-01-22</td>
+            <td>01-02-2024 2:10PM</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>2024-01-17</td>
+            <td><span class="badge rejected">Rejected</span></td>
+            <td>Third Payment</td>
+            <td>LMN Company</td>
+            <td>REF003</td>
+            <td>7,500.00</td>
+            <td>8,100.00</td>
+            <td>12</td>
+            <td>Branch C</td>
+            <td>2024-01-25</td>
+            <td>01-03-2024 4:05PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>

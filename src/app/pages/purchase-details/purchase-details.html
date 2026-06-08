@@ -1,0 +1,149 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="logo">eZ</div>
+
+    <div class="nav-item">🏠</div>
+    <div class="nav-item">💰</div>
+    <div class="nav-item">📦</div>
+    <div class="nav-item active">🛒</div>
+    <div class="nav-item">📊</div>
+    <div class="nav-item">⚙️</div>
+  </aside>
+
+  <main class="main-content">
+    <div class="header">
+      <div class="breadcrumb">Finance &gt; Purchase Bills &gt; Information</div>
+      <a routerLink="/" class="back-link">Back</a>
+    </div>
+
+    <div class="page-title">Purchase Bills Information</div>
+
+    <div class="tabs">
+      <span class="active">Header</span>
+      <span>Details</span>
+      <span>Notes</span>
+      <span>Documents</span>
+    </div>
+
+    <div class="content-grid">
+      <section class="form-panel">
+        <div class="form-row">
+          <label>Item</label>
+          <input type="text" value="Item 1" />
+        </div>
+
+        <div class="form-row">
+          <label>Batch</label>
+          <input type="text" value="BATCH001" />
+        </div>
+
+        <div class="grid-4">
+          <div class="form-row">
+            <label>Standard Cost</label>
+            <input type="text" value="500.00" />
+          </div>
+          <div class="form-row">
+            <label>Standard Price</label>
+            <input type="text" value="650.00" />
+          </div>
+          <div class="form-row">
+            <label>Margin</label>
+            <input type="text" value="150.00" />
+          </div>
+          <div class="form-row">
+            <label>Qty</label>
+            <input type="text" value="10" />
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="form-row">
+            <label>Discount</label>
+            <input type="text" value="0.00" />
+          </div>
+          <div class="form-row">
+            <label>Total Cost</label>
+            <input type="text" value="5000.00" />
+          </div>
+          <div class="form-row">
+            <label>Total Sales</label>
+            <input type="text" value="6500.00" />
+          </div>
+        </div>
+
+        <table class="items-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Batch</th>
+              <th>Standard Cost</th>
+              <th>Standard Price</th>
+              <th>Margin</th>
+              <th>Qty</th>
+              <th>Free Qty</th>
+              <th>Discount</th>
+              <th>Total Cost</th>
+              <th>Total Sales</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Item 1</td>
+              <td>BATCH001</td>
+              <td>500.00</td>
+              <td>650.00</td>
+              <td>150.00</td>
+              <td>10</td>
+              <td>0</td>
+              <td>50.00</td>
+              <td>5000.00</td>
+              <td>6500.00</td>
+            </tr>
+            <tr>
+              <td>Item 2</td>
+              <td>BATCH002</td>
+              <td>450.00</td>
+              <td>600.00</td>
+              <td>150.00</td>
+              <td>8</td>
+              <td>1</td>
+              <td>30.00</td>
+              <td>3600.00</td>
+              <td>4800.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside class="summary-panel">
+        <div class="summary-title">Summary</div>
+
+        <div class="summary-block">
+          <div class="summary-head">Item Summary</div>
+          <div class="summary-line"><span>Total Items</span><span>200</span></div>
+          <div class="summary-line"><span>Total Qty</span><span>200</span></div>
+        </div>
+
+        <div class="summary-block">
+          <div class="summary-head">Financial Summary</div>
+          <div class="summary-line"><span>Gross Total</span><span>950,000.00</span></div>
+          <div class="summary-line"><span>Item Discount</span><span>50.00</span></div>
+          <div class="summary-line"><span>Other Discount</span><span>0.00</span></div>
+          <div class="summary-line"><span>Total Discount</span><span>50.00</span></div>
+          <div class="summary-line"><span>Total Before Tax</span><span>950,000.00</span></div>
+        </div>
+
+        <div class="summary-block">
+          <div class="summary-head">Tax Summary</div>
+          <div class="summary-line"><span>Total Tax</span><span>1000.00</span></div>
+          <div class="summary-line"><span>Suspended Tax</span><span>1000.00</span></div>
+        </div>
+
+        <div class="net-total">
+          <span>Net Total</span>
+          <strong>Rs. 10,000,000.00</strong>
+        </div>
+      </aside>
+    </div>
+  </main>
+</div>
